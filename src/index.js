@@ -1,5 +1,5 @@
 const express = require('express')
-import mongoose from "mongoose";
+const mongoose =  require("mongoose");
 import cors from "cors";
 import route from "./router";
 

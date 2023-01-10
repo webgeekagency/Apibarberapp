@@ -4,7 +4,7 @@ const Clientes = new Schema({
     idSalao:String,
     nome: String,
     tipodecorte: String,
-    valor:Number,
+    valor:String,
     data: String,
     hora: String,
   

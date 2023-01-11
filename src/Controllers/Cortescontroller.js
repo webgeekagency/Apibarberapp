@@ -35,9 +35,9 @@ class Cortescontroller {
         res.json(list)
     }
     async get2(req, res) {
-        const { idsalao } = req.query
+        const { idsalaocorte } = req.query
 
-        const list = await Cortes.findOne({ idsalao: idsalao })
+        const list = await Cortes.find({ idsalaocorte: idsalaocorte })
         res.json(list)
     }
 }

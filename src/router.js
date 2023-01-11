@@ -3,7 +3,7 @@ import Userscontroller from './Controllers/Userscontroller';
 import Clientescontroller from './Controllers/Clientescontroller';
 import Cortescontroller from './Controllers/Cortescontroller';
 import Pagsegurocontroller from './Controllers/Pagsegurocontroller';
-
+import Clientesatendidoscontroller from './Controllers/Clientesatendidoscontroller';
 
 
 
@@ -22,7 +22,7 @@ route.post('/clientes', Clientescontroller.post)
 route.put('/clientes/:_id', Clientescontroller.updade)
 route.delete('/clientes/:_id', Clientescontroller.delete)
 
-route.get('/idsalaocorte', Cortescontroller.get2)
+route.get('/cortes/idSalao', Cortescontroller.get2)
 route.get('/cortes', Cortescontroller.get)
 route.get('/cortes', Cortescontroller.get3)
 route.post('/cortes', Cortescontroller.post)
@@ -31,4 +31,8 @@ route.delete('/cortes/:_id', Cortescontroller.del)
 
 
 route.post('/pagseguro', Pagsegurocontroller.post)
+
+
+route.post('/clientesatendidos', Clientesatendidoscontroller.post)
+route.get('/idsalaoclienteatendido', Clientesatendidoscontroller.get)
 export default route;

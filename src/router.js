@@ -22,7 +22,7 @@ route.post('/clientes', Clientescontroller.post)
 route.put('/clientes/:_id', Clientescontroller.updade)
 route.delete('/clientes/:_id', Clientescontroller.delete)
 
-route.get('/cortes/idSalao', Cortescontroller.get2)
+route.get('/idsalaocorte', Cortescontroller.get2)
 route.get('/cortes', Cortescontroller.get)
 route.get('/cortes', Cortescontroller.get3)
 route.post('/cortes', Cortescontroller.post)

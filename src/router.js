@@ -2,6 +2,11 @@ import { Router } from 'express';
 import Userscontroller from './Controllers/Userscontroller';
 import Clientescontroller from './Controllers/Clientescontroller';
 import Cortescontroller from './Controllers/Cortescontroller';
+import Pagsegurocontroller from './Controllers/Pagsegurocontroller';
+
+
+
+
 const route = new Router();
 
 route.post('/usuarios', Userscontroller.post)
@@ -23,4 +28,7 @@ route.get('/cortes', Cortescontroller.get3)
 route.post('/cortes', Cortescontroller.post)
 route.put('/cortes/:_id', Cortescontroller.update)
 route.delete('/cortes/:_id', Cortescontroller.del)
+
+
+route.post('/pagseguro', Pagsegurocontroller.post)
 export default route;

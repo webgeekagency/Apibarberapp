@@ -8,7 +8,7 @@ class App {
         this.server = express();
         mongoose.set('strictQuery', true)
         mongoose.connect(
-            "mongodb+srv://gspace:gspace@gspacer11.cbpzpqq.mongodb.net/?retryWrites=true&w=majority",
+            "mongodb+srv://barberapp:barberapp@cluster0.3f7t5zl.mongodb.net/?retryWrites=true&w=majority",
             {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,

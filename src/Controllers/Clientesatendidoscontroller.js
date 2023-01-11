@@ -20,5 +20,11 @@ class clientesatendidoscontroller {
 
         return res.json(list)
     }
+     async get2(req, res) {
+        const { idsalaoclienteatendido,data } = req.query
+        const list = await Clientesatendidos.find({ idsalaoclienteatendido: idsalaoclienteatendido,data:data })
+
+        return res.json(list)
+    }
 }
 export default new clientesatendidoscontroller();

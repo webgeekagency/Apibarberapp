@@ -2,9 +2,9 @@ import Cortes from '../schemas/Cortes'
 
 class Cortescontroller {
     async post(req, res) {
-        const { idsalao, corte, valor } = req.body
+        const { idsalaocorte, corte, valor } = req.body
         const list = await Cortes.create({
-            idsalao,
+            idsalaocorte,
             corte,
             valor
         })
@@ -12,9 +12,9 @@ class Cortescontroller {
     }
     async update(req, res) {
         const { _id } = req.params
-        const { idsalao, corte, valor } = req.body
+        const { idsalaocorte, corte, valor } = req.body
         const list = await Cortes.updateOne({ _id: _id }, {
-            idsalao,
+            idsalaocorte,
             corte,
             valor
         })

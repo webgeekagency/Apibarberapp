@@ -35,5 +35,5 @@ route.post('/pagseguro', Pagsegurocontroller.post)
 
 route.post('/clientesatendidos', Clientesatendidoscontroller.post)
 route.get('/idsalaoclienteatendido', Clientesatendidoscontroller.get)
-route.get('/idsalaoclienteatendido', Clientesatendidoscontroller.get2)
+route.get('/clientesatendidos', Clientesatendidoscontroller.get2)
 export default route;

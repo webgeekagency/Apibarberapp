@@ -1,7 +1,7 @@
 import { model, Schema } from 'mongoose'
 
 const Cortes = new Schema({
-    idSalao: String,
+    idsalaocorte: String,
     corte: String,
     valor: String
 })

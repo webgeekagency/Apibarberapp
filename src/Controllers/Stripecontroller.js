@@ -15,10 +15,10 @@ class stripecontroller {
             }
         )
 
-        const user = JSON.parse(localStorage.getItem('sessaobarber'))
+       
 
         const stripeuser = await stripe.customers.create({
-            email: user.email
+            email: ''
         })
 
 

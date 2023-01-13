@@ -4,6 +4,7 @@ import Clientescontroller from './Controllers/Clientescontroller';
 import Cortescontroller from './Controllers/Cortescontroller';
 import Pagsegurocontroller from './Controllers/Pagsegurocontroller';
 import Clientesatendidoscontroller from './Controllers/Clientesatendidoscontroller';
+import Stripecontroller from './Controllers/Stripecontroller';
 
 
 
@@ -36,4 +37,7 @@ route.post('/pagseguro', Pagsegurocontroller.post)
 route.post('/clientesatendidos', Clientesatendidoscontroller.post)
 route.get('/idsalaoclienteatendido', Clientesatendidoscontroller.get)
 route.get('/clientesatendidos', Clientesatendidoscontroller.get2)
+
+route.post('/assinar', Stripecontroller.post)
+
 export default route;

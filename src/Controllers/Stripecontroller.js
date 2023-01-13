@@ -5,7 +5,7 @@ class stripecontroller {
     async post(req, res) {
 
         const stripe = new Stripe(
-            'pk_live_51MPuU9LfnJvk1J3hjL2y9Ro36yG9LceEEvzl7AzgRk9ZOLBATPagtPhXqzNyj9aEL9335b34jiSXm8z4rR9cVyCT00k0226FeU',
+            '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',
             {
                 apiVersion: "2022-11-15",
                 appInfo: {

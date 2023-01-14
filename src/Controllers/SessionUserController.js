@@ -18,5 +18,10 @@ class SessionUserController {
         return res.json(list)
 
     }
+    async delete(req, res) {
+        const { _iduser } = req.query
+        const list = await SessionUser.deleteOne({ _iduser: _iduser })
+        return res.json(list)
+    }
 }
 export default new SessionUserController();

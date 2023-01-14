@@ -43,5 +43,6 @@ route.post('/assinar', Stripecontroller.post)
 
 route.post('/session', SessionUserController.post)
 route.get('/session', SessionUserController.get)
+route.delete('/session/:_iduser', SessionUserController.delete)
 
 export default route;

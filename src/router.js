@@ -5,7 +5,7 @@ import Cortescontroller from './Controllers/Cortescontroller';
 import Pagsegurocontroller from './Controllers/Pagsegurocontroller';
 import Clientesatendidoscontroller from './Controllers/Clientesatendidoscontroller';
 import Stripecontroller from './Controllers/Stripecontroller';
-
+import SessionUserController from './Controllers/SessionUserController';
 
 
 const route = new Router();
@@ -39,5 +39,9 @@ route.get('/idsalaoclienteatendido', Clientesatendidoscontroller.get)
 route.get('/clientesatendidos', Clientesatendidoscontroller.get2)
 
 route.post('/assinar', Stripecontroller.post)
+
+
+route.post('/session', SessionUserController.post)
+route.get('/session', SessionUserController.get)
 
 export default route;

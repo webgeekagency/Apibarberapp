@@ -3,9 +3,9 @@ import SessionUser from "../schemas/SessionUser";
 class SessionUserController {
 
     async post(req, res) {
-        const { _id, nome, email } = req.body
+        const { _iduser, nome, email } = req.body
         const list = await SessionUser.create({
-            _id,
+            _iduser,
             nome,
             email
         })

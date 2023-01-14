@@ -14,12 +14,12 @@ class SessionUserController {
 
     async get(req, res) {
         const { email } = req.query
-        const list = await SessionUser.find({ email: email })
+        const list = await SessionUser.findOne({ email: email })
         return res.json(list)
 
     }
     async delete(req, res) {
-        const { _iduser } = req.params
+        const { _iduser } = req.query
         const list = await SessionUser.deleteOne({ _iduser: _iduser })
         return res.json(list)
     }

@@ -6,7 +6,7 @@ import Pagsegurocontroller from './Controllers/Pagsegurocontroller';
 import Clientesatendidoscontroller from './Controllers/Clientesatendidoscontroller';
 import Stripecontroller from './Controllers/Stripecontroller';
 import SessionUserController from './Controllers/SessionUserController';
-
+import Webhookcontroller from './Controllers/Endpointstripe'
 
 const route = new Router();
 
@@ -44,5 +44,8 @@ route.post('/assinar', Stripecontroller.post)
 route.post('/session', SessionUserController.post)
 route.get('/session', SessionUserController.get)
 route.delete('/session/:_iduser', SessionUserController.delete)
+
+
+route.post('/webhoks', Webhookcontroller.post)
 
 export default route;

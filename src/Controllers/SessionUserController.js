@@ -19,7 +19,7 @@ class SessionUserController {
 
     }
     async delete(req, res) {
-        const { _iduser } = req.query
+        const { _iduser } = req.params
         const list = await SessionUser.deleteOne({ _iduser: _iduser })
         return res.json(list)
     }
